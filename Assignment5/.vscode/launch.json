@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "/Users/emmanuelmutuku/Desktop/Jacobs University/Robotics & Intelligence Systems/Programming Assignments/Assignment5",
+      "environment": [],
+      "program": "/Users/emmanuelmutuku/Desktop/Jacobs University/Robotics & Intelligence Systems/Programming Assignments/Assignment5/build/Debug/outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "externalConsole": true
+    }
+  ]
+}

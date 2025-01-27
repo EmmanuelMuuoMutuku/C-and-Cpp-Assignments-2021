@@ -1,0 +1,38 @@
+// CH-230-A
+// a10_p1.cpp
+// Emmanuel Mutuku
+// emutuku@jacobs-university.de
+
+Explanation for part a which states:
+"Comment out the using namespace std; and then 
+take your time, read and interpret the error message"
+
+When namespace std; is commented out the compiler produces
+an error stating that there is no declaration of string,cout and endl.
+
+Since string,cout and endl can only work when declared inside a namespace
+block, we need to add std:: at the beginning of each string,cout and endl
+found in Critter.cpp
+
+For this case it was added in Void Critter:: print(){
+    std::cout << "I am " << name << ". My hunger level is "
+    << hunger << "." <<std::endl;
+}
+
+Explanation for part b which states: "Remove the Critter:: prefix in one of the
+methods in Critter.cpp, read and interpret the message"
+
+The error produced stated that there was no definition of the name in the scope.
+In this case, name belongs to the private data of the the Critter class.
+
+In the implementation of a method for a class one does not need to use
+selection operator to call methods of similar class.
+
+Hence, we can't access the class other methods belong to since we have
+not specified the class our method is in.
+
+As a result, we have to write the definition of the method in the header file (Critter.h)
+or add Critter:: to the beginning of the method definition.
+
+
+
